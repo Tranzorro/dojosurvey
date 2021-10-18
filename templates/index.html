@@ -8,6 +8,26 @@
     <title>Dojo Survey</title>
 </head>
 <body>
-    
+    <div>
+        <h1> Dojo Survey</h1>
+        <form action="/result" method="POST">
+            <label for="firstname"> First name:</label> <br>
+            <input name="firstname"id="firstname" type="text"><br>
+            <label for="dojolocation"> Dojo Location:</label><br>
+            <select name="dojolocation" id="dojolocation">
+                <option value="murrica">murrica</option>
+                <option value="not murrica">not murrica</option>
+            </select><br>
+            <label for="favelanguage">Favorite Language</label><br>
+            <select name="favelanguage" id="language">
+                <option value="python">python</option>
+                <option value="not python">not python</option>
+                <option value="also not python"> also not python</option>
+            </select><br>
+            <label for="commments">Comments:</label>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 </body>
 </html>
